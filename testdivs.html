@@ -13,17 +13,106 @@
 
     <title>Test site twitter layout 🐦</title>
   </head>
-  <body>
-    <nav class="bg-light">
-      <header>🐦</header>
-      fixed to the side
-    </nav>
-    <main class="bg-info">
+  <body class="d-flex">
+    <!-- this is side bar -->
+    <div
+      class="container-fluid bg-danger vh-100 border-dark w-25 position-fixed"
+    >
+      <ul class="navbar-nav-scroll">
+        <li class="nav-item navbar">🏠home</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <main class="vh-100 position-static w-75">
       <header>Home,brings you to top</header>
       <div>tweetbox</div>
       scrolls forever, down
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
     </main>
-    <aside class="bg-warning">
+
+    <!--här så försvinner det efter 50 width -->
+    <aside class="bg-warning d-md-inline d-none w-25 position-sticky">
       <header>Search</header>
       Search,Trends,who to follow. disapears when width is reduced.
     </aside>
