@@ -13,13 +13,23 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      #nav {
+        height: 100vh;
+        /* this will cause the div to be static and not move when user scrolls */
+        position: fixed;
+        width: 200px;
+        background-color: #f8f9fa;
+      }
+    </style>
     <title>Test site twitter layout 🐦</title>
   </head>
 
   <body>
-    <div class="position-relative row">
+    <div class="position-relative d-flex">
       <div
-        class="d-inline-block p-2 bd-highlight bg-dark text-white position-absolute top-0 start-0 col-3"
+        class="d-inline-block p-2 bd-highlight bg-dark text-white position-fixed top-0 start-0"
+        id="nav"
       >
         <nav class="navbar d-block">
           <!-- d-block lägger länkarna under varandra -->
@@ -75,42 +85,35 @@
           </ul>
         </nav>
       </div>
-
-      <div
+      <main
         class="border border-3 d-inline-block p-2 bd-highlight position-absolute top-0 start-50 translate-middle-x"
       >
-        <main
-          class="vh-100 position-static w-75 d-flex justify-content-between col-6"
-        >
-          <header>Home,brings you to top</header>
-          <div>
-            <section id="write">
-              <h1>twitter post 🌳</h1>
-              <form action="/post" method="POST">
-                <label for="username">username</label>
-                <input type="text" name="username" id="username" />
-                <label for="tweet">tweet</label>
-                <input type="text" name="tweet" id="tweet" />
-                <button type="submit">post</button>
-              </form>
-            </section>
-            <section id="read">
-              <h1>twitter feed 🌽</h1>
-              <ul id="feed">
-                <li id="post-id">
-                  <h2 id="user">user</h2>
-                  <p id="post">tweet</p>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </main>
-      </div>
+        <section id="write">
+          <h1>twitter post 🌳</h1>
+          <form action="/post" method="POST">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" />
+            <label for="tweet">tweet</label>
+            <input type="text" name="tweet" id="tweet" />
+            <button type="submit">post</button>
+          </form>
+        </section>
+        <section id="read">
+          <h1>twitter feed 🌽</h1>
+          <ul id="feed">
+            <li id="post-id">
+              <h2 id="user">user</h2>
+              <p id="post">tweet</p>
+            </li>
+          </ul>
+        </section>
+        <button id="button">does this</button>
+      </main>
 
       <div
-        class="bg-warning border border-3 d-inline-block p-2 bd-highlight position-absolute end-0 col-3 d-none d-lg-block""
+        class="bg-warning border border-3 d-inline-block p-2 bd-highlight position-absolute end-0"
       >
-        <div class="bg-black">.</div>
+        d-inline-block
       </div>
     </div>
     <script src="script.js"></script>

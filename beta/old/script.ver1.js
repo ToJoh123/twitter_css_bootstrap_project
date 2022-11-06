@@ -46,6 +46,6 @@ document.getElementById("write").addEventListener("submit", (e) => {
 });
 
 //a for loop that writes 10 posts to the page with incrementing numbers in the username and tweet
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 10; i++) {
   createPost(i, i);
 }
