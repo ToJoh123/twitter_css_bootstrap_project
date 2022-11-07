@@ -44,7 +44,16 @@
         position: sticky;
         top: 0;
       } */
-
+      #tweet-container{
+        background-color: blue;
+        height: 6rem;
+      }
+      #profile-picture {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin: 1rem;
+      }
     </style>
     <title>👷 testing</title>
   </head>
@@ -59,15 +68,36 @@
       </div>
     </nav>
 
-      <main id="home">
-        <header class="sticky-top bg-light row">
-        <div class="text-start col-8">
-        <button  class="btn btn-primary "><a  class="text-white" href="#home">Home 🌳</a></button>
-      </div>
-      <div class="text-end col-4">
+    <main id="home">
+      <header class="sticky-top bg-light d-flex ">
+        <button  class="btn btn-primary flex-grow-1 text-start "><a  class="text-white" href="#home">Home 🌳</a></button>
         <button class="btn btn-secondary text-end ">🌟</button>
-      </div>
-      </header>
+    </header>
+<!-- this is the new twitter tweet box -->
+
+    <section class="bg-info" id="tweet-box">
+  <div class="d-flex" id="tweet-container">
+    <div >
+      <img  id="profile-picture" src="https://picsum.photos/200/200" alt="profile-picture">
+    </div>
+    <div class="form-outline form-white flex-grow-1 "id="tweet-input">
+      <textarea class="form-control" id="textAreaExample" placeholder="whats happening" ></textarea>
+    </div>
+  </div>
+
+  <div class="d-flex" id="ikons">
+    <div class="btn btn-bd-light" id="ikon1">ikon1</div>
+    <div class="btn btn-bd-light" id="ikon2">ikon2</div>
+    <div class="btn btn-bd-light" id="ikon3">ikon3</div>
+    <div class="btn btn-bd-light" id="ikon4">ikon4</div>
+    <div class="btn btn-bd-light" id="ikon5">ikon5</div>
+    <button class="btn btn-dark ms-auto p-2">tweet</button>
+  </div>
+  <div class="d-flex " id="display-tweets">
+    <button class="btn btn-danger flex-grow-1 ">show more tweets</button>
+  </div>
+    </section>
+
         <section  id="write">
           <form class="border" action="/post" method="POST">
             <label for="username">username</label>
@@ -77,6 +107,7 @@
             <button type="submit">post</button>
           </form>
         </section>
+
         <section id="read">
           <h1 class="border" >twitter feed 🌽</h1>
           <ul  id="feed">
