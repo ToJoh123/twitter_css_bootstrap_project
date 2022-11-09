@@ -7,20 +7,25 @@ Uppgiften går ut på att använda sig utav Bootstrap samt egen CSS för att byg
 - Kreativitet uppmuntras
 
 # Skapa högra delen av Twitterkopia
-Använde oss av elementet aside då sidan ska ligga separat till höger. I detta element har vi använt bootstrap för att bestämma bakgrundsfärg. Vi satte bredden av elementet och fixerar den högra delen efter att man scrollar ned en liten bit. Denna del försvinner när bredden blir mindre än 767 pixlar bred.  
+
+Använde oss av elementet aside då sidan ska ligga separat till höger. I detta element har vi använt bootstrap för att bestämma bakgrundsfärg. Vi satte bredden av elementet och fixerar den högra delen efter att man scrollar ned en liten bit. Denna del försvinner när bredden blir mindre än 767 pixlar bred.
 
 # Skapa sökruta
-Jag har skapat en sökruta uppe till höger. Jag har försökt få in ett förstoringsglas till vänster i sökrutan likt Twitter men har inte lytckats med det. Förstoringsglaset ligger ovanför sökrutan. 
+
+Jag har skapat en sökruta uppe till höger. Jag har försökt få in ett förstoringsglas till vänster i sökrutan likt Twitter men har inte lytckats med det. Förstoringsglaset ligger ovanför sökrutan.
 Formen på sökrutan har gjorts pillerformad och är tänkt att vara lika bred som den högra delen med width="100%" men funkar inte.
 Vi har lagt in en placeholder med texten Search.
 
 # lista
+
 Sedan har vi gjort en lista över trender just nu. Vi har gjort övre och undre kanten av listan rundad och tagit bort borders. VI alde in de tre prickarna son knappar och styleade dem med bootstrap.
 
 # Who to follow
+
 Här har vi gjort profilbilderna runda och ändrat storlek på dem med bootstrap.
 
 # Svagheter bootstrap
+
 *Finns inte så många färger
 *Svårare att memorera kommandon när de ofta består av en bokstav.
 
