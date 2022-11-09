@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Test site twitter layout 🐦</title>
+  </head>
+  <body class="d-flex view overlay">
+    <!-- this is side bar -->
+    <div
+      class="position-sticky sticky-top d-flex flex-column vh-100 w-25 justify-content-between align-items-end"
+    >
+      <nav
+        class="d-flex fs-4 container-fluid bg-white border-dark justify-content-end"
+      >
+        <ul class="d-flex nav nav-pills flex-column">
+          <li class="li-hover-effect">
+            <a
+              class="fs-2 my-3 text-decoration-none fa-brands fa-twitter"
+              href="./leftsidenav.html"
+            ></a>
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-house"
+              href="#"
+            >
+            </a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Home</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-hashtag"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Explore</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-bell"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Notifications</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-envelope"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Messages</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-bookmark"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Bookmarks</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-table-list"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Lists</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-user"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              Profile</a
+            >
+          </li>
+          <li class="li-hover-effect">
+            <a
+              class="my-3 text-decoration-none link-dark fa-solid fa-ellipsis"
+              href="#"
+            ></a>
+            <a
+              class="my-3 text-decoration-none link-dark d-none d-xl-inline"
+              href="#"
+            >
+              More</a
+            >
+          </li>
+
+          <li class="my-3 tweet-button">
+            <a>Tweet</a>
+          </li>
+          <!-- <li>
+               <div class="twitter-profil li-hover-effect d-flex align-items-center">
+        <img
+            class="rounded-circle"
+            id="twitter-pfp"
+            src="https://picsum.photos/40/40"
+            alt="randomized image 40x40px"
+          />
+  
+          <div class="d-none d-xl-inline d-flex align-middle align-items-center">
+            <li class="list-unstyled link-dark fw-bold text-decoration-none" href="#">Jonathan Ljung</li>
+            <li class="list-unstyled text-decoration-none link-secondary" href="#">@jonathanljungp</li>
+          </div>
+  
+          <a 
+          class="d-none d-xl-inline col-md-2 .col-md-offset-2 text-decoration-none link-dark fa-solid fa-ellipsis d-block"
+          id="prickar"  
+          href="#"
+          ></a>
+        
+      </div>
+          ></a></li> -->
+        </ul>
+        
+      </nav>
+
+      <div class="twitter-profil li-hover-effect d-flex align-items-center">
+        <img
+            class="rounded-circle"
+            id="twitter-pfp"
+            src="https://picsum.photos/40/40"
+            alt="randomized image 40x40px"
+          />
+  
+          <div class="d-none d-xl-inline d-flex align-middle align-items-center">
+            <li class="list-unstyled link-dark fw-bold text-decoration-none" href="#">Jonathan Ljung</li>
+            <li class="list-unstyled text-decoration-none link-secondary" href="#">@jonathanljungp</li>
+          </div>
+  
+          <a 
+          class="d-none d-xl-inline col-md-2 .col-md-offset-2 text-decoration-none link-dark fa-solid fa-ellipsis d-block"
+          id="prickar"  
+          href="#"
+          ></a>
+        
+      </div>
+    </div>
+
+    <main class="vh-100 position-static w-75">
+      <header>Home,brings you to top</header>
+      <div>tweetbox</div>
+      scrolls forever, down
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          illum unde iure sint enim veniam nemo minima maxime consectetur odit?
+          Corrupti vel in architecto totam quibusdam aliquam, illo consequatur
+          ea!
+        </p>
+      </article>
+    </main>
+
+    <!--här så försvinner det efter 50 width -->
+    <aside class="bg-white d-md-inline d-none w-25 position-sticky">
+      <!-- Search,Trends,who to follow. disapears when width is reduced. -->
+  <div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div class="form">
+          <!-- fa fa-search ska skapa ett förstoringsglas men fungerar inte. -->
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" class="form-control rounded-pill" width="100%" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="p-3 m-3 bg-white">
+    
+      <h4 class="p-1">Trends for you</h4>
+    
+     <ul class="list-group list-group borderless">
+      <li class="list-group-item d-flex justify-content-between align-items-start rounded-top">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Bootstrap</div>
+          146K Tweets
+        </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Löksås</div>
+      2M Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Birds</div>
+            176K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Dogs</div>
+          290k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Cats</div>
+      275K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Cars</div>
+      205K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Music</div>
+        334k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start rounded-bottom">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Furniture</div>
+          75k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+    <a href="#" class="p-1">Show more</a> 
+
+     </ul>
+     
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="p-3 m-3 bg-white rounded-top rounded-bottom">
+      <h4>Who to follow</h4>
+
+      <ul class="list-group list-group borderless">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="img/bean.jpg" class="rounded-circle" width="20%" alt="Gustav"> Gustav</div>
+            @gustav
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="img/batman.jpg"rounded-circle" width="20%" alt="Jonathan"> Jonathan</div>
+            @jonathan
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="./img/shrek.jpg" class="rounded-circle" width="20%" alt="Tom"> Tom</div>
+            @tom
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        </ul>
+     
+
+      </div>
+      </div>
+  </aside>
+    <script
+      src="https://kit.fontawesome.com/393d67285f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

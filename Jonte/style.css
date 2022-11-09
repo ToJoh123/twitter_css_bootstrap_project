@@ -1,0 +1,56 @@
+.li-hover-effect:hover {
+
+    background: rgba(128, 128, 128, 0.186);
+    border-radius: 30px;
+    width: fit-content;
+    
+}
+
+.li-hover-effect {
+    padding: 0.075rem 1rem;
+}
+
+.tweet-button{
+    display:flex;
+    background: rgb(29, 155, 240);
+    border-radius: 30px;
+    padding: 0.70rem 1rem;
+    width: 12vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tweet-button a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tweet-button:hover {
+    background: rgb(25, 131, 202)
+}
+
+.fa-twitter {
+    color: rgb(29, 155, 240);
+}
+
+.twitter-profil {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 800px) {
+    .twitter-profil {
+    left: 0;
+    bottom: 0;
+    }
+  } */
+
+#twitter-pfp {
+    margin-right: 10px;
+}
+
+#prickar {
+    margin-left: 35px;
+}
