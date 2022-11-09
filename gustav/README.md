@@ -1,0 +1,2 @@
+Jag valde att arbeta med Aside-elementet. Jag började med att skapa en sökruta som ligger uppe till höger. Det tog ett tag att lyckas få den som den är och Jag lyckades inte riktigt få den lika bred som nedan element som jag hade tänkt. Jag lyckades inte få in förstoringsglaset på rätt plats heller utan den ligger ovanför sökrutan.
+Sedan skapade jag två lstor med trender just nu och förslag på personer man kan följa. Jag skapade dessa som listor för att kunna få punkterna att ligga till höger.
