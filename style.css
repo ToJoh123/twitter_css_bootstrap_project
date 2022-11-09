@@ -37,4 +37,20 @@
 
 .twitter-profil {
     cursor: pointer;
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 800px) {
+    .twitter-profil {
+    left: 0;
+    bottom: 0;
+    }
+  } */
+
+#twitter-pfp {
+    margin-right: 10px;
+}
+
+#prickar {
+    margin-left: 35px;
 }
