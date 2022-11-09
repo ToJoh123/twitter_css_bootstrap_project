@@ -16,7 +16,7 @@
 
     <title>Test site twitter layout 🐦</title>
   </head>
-  <body class="d-flex view overlay">
+  <body class="d-flex view   overlay">
     <!-- this is side bar -->
     <div
       class="position-sticky sticky-top d-flex flex-column vh-100 w-25 justify-content-between align-items-end"
@@ -188,7 +188,7 @@
       </div>
     </div>
 
-    <main id="home">
+    <main  id="home">
       <header class="sticky-top bg-light d-flex">
         <button class="btn flex-text-start">
           <a class="text-black text-decoration-none text-" href="#home">Home</a>
@@ -269,11 +269,11 @@
                 <p class="btn btn-edit ms-auto p-2" id="btn-dismiss">x</p>
               </div>
 
-              <div class="d-flex">
-                <p id="btn-post">
+              <div class="d-flex ">
+                <p id="btn-post ">
                     <ul>
                         <p>Hur gick ni tillväga i förarbete planering, uppdelning osv</p>
-                    <li>   Hur har ni använt Bootstrap?</li>
+                    <li>   Hur har ni använt Bootstrap ?</li>
                     <li> Var fann ni Bootstaps svagheter?</li>
                     <li>Var   det något särskilt problem som ni löste som kändes speciellt svårt?</li>
                         <li>vad bör man tänka på tills nästa liknande projekt?</li>
@@ -306,7 +306,7 @@
         <!-- end of post first section -->
 
         <!-- this section is the second post section -->
-        <section class="h-25">
+        <section class="w-25">
           <div class="d-flex btn post-hover-effect" id="post">
             <div class="">
               <img
@@ -327,14 +327,21 @@
               </div>
 
               <div class="d-flex">
-                <div class="">
-                  <p class="" id="btn-post">
-                    Tweet tweet 🐦 i wrote some text i want to share!
-                  </p>
-                  <img src="Jonte/img/projekt_start.jpg" alt="rando pico"
-                  width="400"
-                  height="200" />
+                <div class="container-fluid">
+                  <p class=""  id="btn-post">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">    Vi började med att skapa en struktur för sidan. Vi kom fram till att dela upp sidan i nav,main och aside. Vi märkte väldigt snabbt att det var väldigt behändigt med bootstrap. vi gillade starkt  klaserna  <strong> .d-md-none .d-lg-block </strong>. det kändes som en komplicerad grej som blev gjord snabbt</li>
+                        <li class="list-inline-item">  <img src="Jonte/img/projekt_start.jpg" alt="rando pico"
+                            width="400"
+                            height="200" /></li>
+                        <li class="list-inline-item">Det var svårt att använda sig utav position relative och absolute. Däremot så fungerade <strong>sticky-top</strong> väldigt bra. För att positionera allting så har jag använt mig i regel av d-flex för att så innehåll bredvid varandra.  </li>
+                        <li class="list-inline-item"><img src="jonte/img/flexbox.png" alt="flexbox"> </li>
+                        <li>det som inte har fungerat för är att bestämma bredden på dessa post sektioner. Jag vill inte att denna del ska vara responsiv eftersom att då får jag problem med att texten flyttar sig. </li>
+                      </ul>
+                    </p>
+                  
                 </div>
+
                 <div>
                   <p class="btn btn-edit" id="btn-more">...</p>
                 </div>
@@ -362,7 +369,7 @@
         <!-- end of post second post section-->
 
         <!-- this section is the third post section -->
-        <section class="h-25">
+        <section class="w-25">
             <ul class="list-inline ms-5" id="banner-category">
                 <li class="list-inline-item">
                   <i class="fa fa-commenting-o" aria-hidden="true"></i>
@@ -537,7 +544,7 @@
     <!-- end of main section -->
 
     <!--här så försvinner det efter 50 width -->
-    <aside class="bg-white d-md-inline d-none w-25 position-sticky">
+    <aside class="bg-white d-md-none d-lg-block w-25 position-sticky">
       <!-- Search,Trends,who to follow. disapears when width is reduced. -->
       <div class="container">
         <div
@@ -716,6 +723,7 @@
         </div>
       </div>
     </aside>
+
     <script
       src="https://kit.fontawesome.com/393d67285f.js"
       crossorigin="anonymous"
