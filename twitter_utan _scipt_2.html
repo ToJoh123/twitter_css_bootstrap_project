@@ -190,7 +190,7 @@
 
     <main id="home">
       <header class="sticky-top bg-light d-flex">
-        <button class="btn flex-grow-1 text-start">
+        <button class="btn flex-text-start">
           <a class="text-black text-decoration-none text-" href="#home">Home</a>
         </button>
         <button class="btn btn-edit text-end">
@@ -210,7 +210,7 @@
                 alt="profile-picture"
             /></a>
           </div>
-          <div class="form-outline form-white flex-grow-1" id="tweet-input">
+          <div class="form-outline form-white " id="tweet-input">
             <textarea
               class="form-control border-0"
               id="textAreaExample"
@@ -243,12 +243,12 @@
           </button>
         </div>
         <div class="d-flex" id="display-tweets">
-          <button class="btn text-primary flex-grow-1">
+          <button class="btn text-primary">
             show <span id="new-tweet-number">78</span> tweets
           </button>
         </div>
 
-        <!-- this section is the post section -->
+        <!-- this section is the first  post section -->
         <section class="h-25">
           <div class="d-flex btn post-hover-effect" id="post">
             <div class="">
@@ -303,9 +303,9 @@
             </div>
           </div>
         </section>
-        <!-- end of post section -->
+        <!-- end of post first section -->
 
-        <!-- this section is the post section -->
+        <!-- this section is the second post section -->
         <section class="h-25">
           <div class="d-flex btn post-hover-effect" id="post">
             <div class="">
@@ -357,173 +357,178 @@
             </div>
           </div>
         </section>
-        <!-- end of post section -->
+        <!-- end of post second post section-->
 
-        <!-- this section is a post with a thread-->
+        <!-- this section is the third post section -->
         <section class="h-25">
-          <div class="d-flex btn post-hover-effect" id="post">
-            <div>
-              <img
+            <ul class="list-inline ms-5" id="banner-category">
+                <li class="list-inline-item">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                </li>
+                <li class="list-inline-item text-black-50">
+                  <a
+                    class="text-decoration-none text-black-50"
+                    href="https://www.coursera.org/articles/web-developer"
+                    >Webb developer</a
+                  >
+                </li>
+                <li class="list-inline-item text-primary">
+                  <a
+                    class="text-decoration-none"
+                    href="https://www.coursera.org/articles/web-developer"
+                    >See more</a
+                  >
+                </li>
+              </ul>
+            <div class="d-flex btn post-hover-effect" id="post">
+            <div class="">
+                <img
                 class="rounded-circle"
                 id="profile-picture"
-                src="https://picsum.photos/60/60"
+                src="https://media.tenor.com/QUdqYaj8dNYAAAAC/rick-and-morty-rick.gif"
                 alt="profile-picture"
-              />
+                width="60"
+                height="60"
+                />
             </div>
             <div>
-              <div class="d-flex">
+                <div class="d-flex">
                 <p class="btn btn-edit">Jonathan Ljung</p>
                 <p class="text-black-50" id="user-id">@jonathanljungp</p>
                 <p class="text-black-50" id="hours-since-tweet">7h</p>
                 <p class="btn btn-edit ms-auto p-2" id="btn-dismiss">x</p>
-              </div>
+                </div>
 
-              <article class="d-flex">
-                <div>
-                  <p id="btn-post ">
-                    Tweet tweet 🐦 i wrote some text i want to share! Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                    perferendis veritatis recusandae expedita ad sed quam itaque
-                    sapiente obcaecati a!
-                  </p>
-                  <img
-                    src="https://pbs.twimg.com/card_img/1586887255590739968/50572am4?format=jpg&name=small"
-                    alt="rando pico"
-                    height="200px"
-                    width="300px"
-                  />
+                <div class="d-flex">
+                <div class="">
+                    <p class="" id="btn-post">
+                    Tweet tweet 🐦 i wrote some text i want to share!
+                    </p>
+                    <img src="https://picsum.photos/300/200" alt="rando pico" />
                 </div>
                 <div>
-                  <p class="btn btn-edit" id="btn-more">...</p>
+                    <p class="btn btn-edit" id="btn-more">...</p>
                 </div>
-              </article>
-
-              <div class="d-flex justify-content-evenly">
+                </div>
+                <div class="d-flex justify-content-evenly">
                 <div class="btn btn-edit d-flex" id="btn-reply">
-                  <i class="fa fa-comment-o" aria-hidden="true"></i>
-                  <p id="reply-value">13</p>
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <p id="reply-value">13</p>
                 </div>
                 <div class="btn btn-edit d-flex" id="btn-retweet">
-                  <i class="fa fa-reply-all" aria-hidden="true"></i>
-                  <p id="retweet-value">37</p>
+                    <i class="fa fa-reply-all" aria-hidden="true"></i>
+                    <p id="retweet-value">37</p>
                 </div>
                 <div class="btn btn-edit d-flex" id="btn-like">
-                  <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  <p id="likes-value">1337</p>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <p id="likes-value">1337</p>
                 </div>
                 <div class="btn btn-edit d-flex" id="btn-share">
-                  <i class="fa fa-upload" aria-hidden="true"></i>
+                    <i class="fa fa-upload" aria-hidden="true"></i>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <section id="show-thread">
-            <div class="btn d-flex">
-              <img
-                class="rounded-circle px-2"
-                id="profile-picture"
-                src="https://picsum.photos/40/40"
-                alt="profile-picture"
-              />
-              <p class="text-primary">Show this thread</p>
             </div>
-          </section>
-        </section>
-        <!-- end of post with thread section -->
-
-        <!-- this section is a post with a thread and category banner top-->
-        <section class="h-25">
-          <ul class="list-inline ms-5" id="banner-category">
-            <li class="list-inline-item">
-              <i class="fa fa-commenting-o" aria-hidden="true"></i>
-            </li>
-            <li class="list-inline-item text-black-50">
-              <a
-                class="text-decoration-none text-black-50"
-                href="https://www.coursera.org/articles/web-developer"
-                >Webb developer</a
-              >
-            </li>
-            <li class="list-inline-item text-primary">
-              <a
-                class="text-decoration-none"
-                href="https://www.coursera.org/articles/web-developer"
-                >See more</a
-              >
-            </li>
-          </ul>
-
-          <div class="d-flex btn post-hover-effect">
-            <div>
-              <img
-                class="rounded-circle"
-                id="profile-picture"
-                src="https://pbs.twimg.com/profile_images/1588440794515505152/6L9iILYb_400x400.jpg"
-                alt="profile-picture"
-                width="60px"
-                height="60px"
-              />
-            </div>
-            <div>
-              <div class="d-flex">
-                <p class="btn btn-edit">Tom Johansson</p>
-                <p class="text-black-50" id="user-id">@jTomJoha58898307</p>
-                <p class="text-black-50 ms-2" id="hours-since-tweet">999h</p>
-                <p class="btn btn-edit ms-auto p-2" id="btn-dismiss">x</p>
-              </div>
-
-              <article class="d-flex">
-                <div>
-                  <p id="btn-post ">
-                    Tweet tweet 🐦 i wrote some text i want to share! Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                    perferendis veritatis recusandae expedita ad sed quam itaque
-                    sapiente obcaecati a!
-                  </p>
+            <section id="show-thread">
+                <div class="btn d-flex">
                   <img
-                    src="https://media.tenor.com/57w9du3NrV0AAAAd/css-html.gif"
-                    alt="nooo"
-                    width="300"
-                    height="200"
+                    class="rounded-circle px-2"
+                    id="profile-picture"
+                    src="https://picsum.photos/40/40"
+                    alt="profile-picture"
                   />
+                  <p class="text-primary">Show this thread</p>
                 </div>
-                <div>
-                  <p class="btn btn-edit" id="btn-more">...</p>
-                </div>
-              </article>
-
-              <div class="d-flex justify-content-evenly">
-                <div class="btn btn-edit d-flex" id="btn-reply">
-                  <i class="fa fa-comment-o" aria-hidden="true"></i>
-                  <p id="reply-value">13</p>
-                </div>
-                <div class="btn btn-edit d-flex" id="btn-retweet">
-                  <i class="fa fa-reply-all" aria-hidden="true"></i>
-                  <p id="retweet-value">37</p>
-                </div>
-                <div class="btn btn-edit d-flex" id="btn-like">
-                  <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  <p id="likes-value">1337</p>
-                </div>
-                <div class="btn btn-edit d-flex" id="btn-share">
-                  <i class="fa fa-upload" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section id="show-thread">
-            <div class="btn d-flex">
-              <img
-                class="rounded-circle px-2"
-                id="profile-picture"
-                src="https://picsum.photos/40/40"
-                alt="profile-picture"
-              />
-              <p class="text-primary">Show this thread</p>
-            </div>
-          </section>
+              </section>
         </section>
-        <!-- end of post with thread with category banner top section -->
+        <!-- end of post third post section-->
+
+ <!-- this section is the third post section -->
+ <section class="h-25">
+    <ul class="list-inline ms-5" id="banner-category">
+        <li class="list-inline-item">
+          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        </li>
+        <li class="list-inline-item text-black-50">
+          <a
+            class="text-decoration-none text-black-50"
+            href="https://www.coursera.org/articles/web-developer"
+            >Webb developer</a
+          >
+        </li>
+        <li class="list-inline-item text-primary">
+          <a
+            class="text-decoration-none"
+            href="https://www.coursera.org/articles/web-developer"
+            >See more</a
+          >
+        </li>
+      </ul>
+    <div class="d-flex btn post-hover-effect" id="post">
+    <div class="">
+        <img
+        class="rounded-circle"
+        id="profile-picture"
+        src="https://media.tenor.com/QUdqYaj8dNYAAAAC/rick-and-morty-rick.gif"
+        alt="profile-picture"
+        width="60"
+        height="60"
+        />
+    </div>
+    <div>
+        <div class="d-flex">
+        <p class="btn btn-edit">Jonathan Ljung</p>
+        <p class="text-black-50" id="user-id">@jonathanljungp</p>
+        <p class="text-black-50" id="hours-since-tweet">7h</p>
+        <p class="btn btn-edit ms-auto p-2" id="btn-dismiss">x</p>
+        </div>
+
+        <div class="d-flex">
+        <div class="">
+            <p class="" id="btn-post">
+            Tweet tweet 🐦 i wrote some text i want to share!
+            </p>
+            <img src="https://picsum.photos/300/200" alt="rando pico" />
+        </div>
+        <div>
+            <p class="btn btn-edit" id="btn-more">...</p>
+        </div>
+        </div>
+        <div class="d-flex justify-content-evenly">
+        <div class="btn btn-edit d-flex" id="btn-reply">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <p id="reply-value">13</p>
+        </div>
+        <div class="btn btn-edit d-flex" id="btn-retweet">
+            <i class="fa fa-reply-all" aria-hidden="true"></i>
+            <p id="retweet-value">37</p>
+        </div>
+        <div class="btn btn-edit d-flex" id="btn-like">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <p id="likes-value">1337</p>
+        </div>
+        <div class="btn btn-edit d-flex" id="btn-share">
+            <i class="fa fa-upload" aria-hidden="true"></i>
+        </div>
+        </div>
+    </div>
+    </div>
+    <section id="show-thread">
+        <div class="btn d-flex">
+          <img
+            class="rounded-circle px-2"
+            id="profile-picture"
+            src="https://picsum.photos/40/40"
+            alt="profile-picture"
+          />
+          <p class="text-primary">Show this thread</p>
+        </div>
+      </section>
+</section>
+<!-- end of post third post section-->
+        
+
+      
       </section>
       <!-- end of text-box section, this needs to end to keep navbar from overlapp main section. Better name needed -->
     </main>
@@ -657,7 +662,7 @@
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
                   <img
-                    src="img/bean.jpg"
+                    src="jonte/img/shrek.jpg"
                     class="rounded-circle"
                     width="20%"
                     alt="Gustav"
@@ -676,7 +681,7 @@
             >
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
-                  <img src="img/batman.jpg"rounded-circle" width="20%"
+                  <img src="Jonte/img/batman.jpg"rounded-circle" width="20%"
                   alt="Jonathan"> Jonathan
                 </div>
                 @jonathan
@@ -692,7 +697,7 @@
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
                   <img
-                    src="./img/shrek.jpg"
+                    src="Jonte/img/bean.jpg"
                     class="rounded-circle"
                     width="20%"
                     alt="Tom"
