@@ -17,7 +17,7 @@
   <body class="d-flex view overlay">
     <!-- this is side bar -->
     <div
-      class="d-flex flex-column vh-100 w-25 justify-content-between align-items-end"
+      class="position-sticky sticky-top d-flex flex-column vh-100 w-25 justify-content-between align-items-end"
     >
       <nav
         class="d-flex fs-4 container-fluid bg-white border-dark justify-content-end"
@@ -26,7 +26,7 @@
           <li class="li-hover-effect">
             <a
               class="fs-2 my-3 text-decoration-none fa-brands fa-twitter"
-              href="./index.html"
+              href="./leftsidenav.html"
             ></a>
           </li>
           <li class="li-hover-effect">
@@ -265,10 +265,170 @@
     </main>
 
     <!--här så försvinner det efter 50 width -->
-    <aside class="vh-100 bg-warning d-md-inline d-none w-25 position-sticky">
-      <header>Search</header>
-      Search,Trends,who to follow. disapears when width is reduced.
-    </aside>
+    <aside class="bg-warning d-md-inline d-none w-25 position-sticky">
+      <!-- Search,Trends,who to follow. disapears when width is reduced. -->
+  <div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div class="form">
+          <!-- fa fa-search ska skapa ett förstoringsglas men fungerar inte. -->
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" class="form-control rounded-pill" width="100%" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="p-3 m-3 bg-white rounded-top rounded-bottom">
+    
+      <h4 class="p-1">Trends for you</h4>
+    
+     <ul class="list-group list-group borderless">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Bootstrap</div>
+          146K Tweets
+        </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Löksås</div>
+      2M Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Birds</div>
+            176K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Dogs</div>
+          290k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Cats</div>
+      275K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Cars</div>
+      205K Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Music</div>
+        334k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div>Trending in Sweden</div>
+          <div class="fw-bold">Furniture</div>
+          75k Tweets
+          </div>
+        <button class="btn bg-white rounded-pill">•••</button>
+      </li>
+    <a href="#" class="p-1">Show more</a> 
+
+     </ul>
+     
+     <!-- <p>Trending in Sweden <br>
+      <strong>Bootstrap</strong><strong class="text-end">•••</strong><br>
+      146K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Löksås</strong><br>
+      2M Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Birds</strong><br>
+      198K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Dogs</strong><br>
+      255K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Cats</strong><br>
+      98K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Cars</strong><br>
+      340K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Music</strong><br>
+      400K Tweets
+    </p>
+    <p>Trending in Sweden <br>
+      <strong>Furniture</strong><br>
+      67K Tweets
+    </p>
+    <a href="#">Show more</a> -->
+    </div>
+  </div>
+  <div class="column">
+    <div class="p-3 m-3 bg-white rounded-top rounded-bottom">
+      <h4>Who to follow</h4>
+
+      <ul class="list-group list-group borderless">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="bean.jpg" class="rounded-circle" width="20%" alt="Gustav"> Gustav</div>
+            @gustav
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="batman.jpg" class="rounded-circle" width="20%" alt="Jonathan"> Jonathan</div>
+            @jonathan
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><img src="shrek.jpg" class="rounded-circle" width="20%" alt="Tom"> Tom</div>
+            @tom
+          </div>
+          <button class="btn bg-dark rounded-pill text-white">Follow</button>
+        </li>
+
+        </ul>
+     
+
+      </div>
+      </div>
+  </aside>
     <script
       src="https://kit.fontawesome.com/393d67285f.js"
       crossorigin="anonymous"
