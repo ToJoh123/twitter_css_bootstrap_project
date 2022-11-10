@@ -15,7 +15,7 @@ Formen på sökrutan har gjorts pillerformad och är tänkt att vara lika bred s
 Vi har lagt in en placeholder med texten Search.
 
 # lista
-Sedan har vi gjort en lista över trender just nu. Vi har gjort övre och undre kanten av listan rundad och tagit bort borders. VI alde in de tre prickarna son knappar och styleade dem med bootstrap.
+Sedan har vi gjort en lista över trender just nu. Vi har gjort övre och undre kanten av listan rundad och tagit bort borders. Vi lade in de tre prickarna som knappar och styleade dem med bootstrap.
 
 # Who to follow
 Här har vi gjort profilbilderna runda och ändrat storlek på dem med bootstrap.
@@ -23,6 +23,7 @@ Här har vi gjort profilbilderna runda och ändrat storlek på dem med bootstrap
 # Svagheter bootstrap
 *Finns inte så många färger
 *Svårare att memorera kommandon när de ofta består av en bokstav.
+*Finns bara nivå 0-5 när det gäller ex padding, margin.
 
 Jag valde att arbeta med Aside-elementet. Jag började med att skapa en sökruta som ligger uppe till höger. Det tog ett tag att lyckas få den som den är och Jag lyckades inte riktigt få den lika bred som nedan element som jag hade tänkt. Jag lyckades inte få in förstoringsglaset på rätt plats heller utan den ligger ovanför sökrutan.
 Sedan skapade jag två lstor med trender just nu och förslag på personer man kan följa. Jag skapade dessa som listor för att kunna få punkterna att ligga till höger.
