@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Test site twitter layout 🐦</title>
+    <title>twitter page 🐦</title>
   </head>
   <body class="d-flex view   overlay">
     <!-- this is side bar -->
@@ -132,28 +132,6 @@
           <li class="my-3 tweet-button">
             <a>Tweet</a>
           </li>
-          <!-- <li>
-               <div class="twitter-profil li-hover-effect d-flex align-items-center">
-        <img
-            class="rounded-circle"
-            id="twitter-pfp"
-            src="https://picsum.photos/40/40"
-            alt="randomized image 40x40px"
-          />
-  
-          <div class="d-none d-xl-inline d-flex align-middle align-items-center">
-            <li class="list-unstyled link-dark fw-bold text-decoration-none" href="#">Jonathan Ljung</li>
-            <li class="list-unstyled text-decoration-none link-secondary" href="#">@jonathanljungp</li>
-          </div>
-  
-          <a 
-          class="d-none d-xl-inline col-md-2 .col-md-offset-2 text-decoration-none link-dark fa-solid fa-ellipsis d-block"
-          id="prickar"  
-          href="#"
-          ></a>
-        
-      </div>
-          ></a></li> -->
         </ul>
       </nav>
 
@@ -331,13 +309,13 @@
                   <p class=""  id="btn-post">
                     <ul class="list-inline">
                         <li class="list-inline-item">    Vi började med att skapa en struktur för sidan. Vi kom fram till att dela upp sidan i nav,main och aside. Vi märkte väldigt snabbt att det var väldigt behändigt med bootstrap. vi gillade starkt  klaserna  <strong> .d-md-none .d-lg-block </strong>. det kändes som en komplicerad grej som blev gjord snabbt</li>
-                        <li class="list-inline-item">  <img src="Jonte/img/projekt_start.jpg" alt="rando pico"
+                        <li class="list-inline-item">  <img src="img/projekt_start.jpg" alt="rando pico"
                             width="400"
                             height="200" /></li>
                         <li class="list-inline-item">Det var svårt att använda sig utav position relative och absolute. Däremot så fungerade <strong>sticky-top</strong> väldigt bra. För att positionera allting så har jag använt mig i regel av d-flex för att så innehåll bredvid varandra.  </li>
-                        <li class="list-inline-item"><img src="jonte/img/flexbox.png" alt="flexbox"> </li>
+                        <li class="list-inline-item"><img src="img/flexbox.png" alt="flexbox" width="200"> </li>
                         <li>det som inte har fungerat för är att bestämma bredden på dessa post sektioner. Jag vill inte att denna del ska vara responsiv eftersom att då får jag problem med att texten flyttar sig. </li>
-                        <li><img src="jonte/img/problem-divs.png" alt="bild på text utanför element"></li>
+                        <li><img src="img/problem-divs.png" alt="bild på text utanför element" width="300px" ></li>
                       </ul>
                     </p>
                   
@@ -412,7 +390,14 @@
                 <div class="d-flex">
                 <div class="">
                     <p class="" id="btn-post">
-                    Tweet tweet 🐦 i wrote some text i want to share!
+                      Jag började med att hitta ikonerna, dessa fanns på fontawesome.com. 
+                      Listade upp alla alternativen i sidospalten med hjälp av nav, li & a-taggar, stylade med hjälp av bootstrap samt lite css. 
+                      
+                      Jag använde mig utav bootstrap för att få ikonerna att stanna kvar men texten försvinna vid ett mindre fönster, jag använde mig också utav position-sticky för att få texten att alltid vara statisk på vänster sida av skärmen. 
+                      
+                      Sedan gjorde jag en tweet knapp, denna designade jag bara med hjälp av css. 
+                      
+                      Till sist skapade jag en liten förhandsvisning av twitter-profilen under allt i vänsterspalten. Detta gjorde jag via bootstrap och css.
                     </p>
                     <img src="https://picsum.photos/300/200" alt="rando pico" />
                 </div>
@@ -488,35 +473,20 @@
     <div>
         <div class="d-flex">
         <p class="btn btn-edit"><Strong>Gustav</Strong></p>
-        <p class="text-black-50" id="user-id">@jonathanljungp</p>
+        <p class="text-black-50" id="user-id">@Gustavusername</p>
         <p class="text-black-50" id="hours-since-tweet">7h</p>
         <p class="btn btn-edit ms-auto p-2" id="btn-dismiss">x</p>
         </div>
 
         <div class="d-flex">
         <div class="">
-            <p class="" id="btn-post">
-                <ul class="list-unstyled">
-                <p> <strong>Skapa högra delen av Twitterkopia</strong> </p>
-                <li class=""> Använde oss av elementet aside då sidan ska ligga separat till höger. I detta element har vi använt bootstrap för att bestämma bakgrundsfärg. Vi satte bredden av elementet och fixerar den högra delen efter att man scrollar ned en liten bit. Denna del försvinner när bredden blir mindre än 767 pixlar bred.  </li>
-                <p><strong>Skapa sökruta</strong></p>
-                <li class=""> Jag har skapat en sökruta uppe till höger. Jag har försökt få in ett förstoringsglas till vänster i sökrutan likt Twitter men har inte lytckats med det. Förstoringsglaset ligger ovanför sökrutan. 
-                    Formen på sökrutan har gjorts pillerformad och är tänkt att vara lika bred som den högra delen med width="100%" men funkar inte.
-                    Vi har lagt in en placeholder med texten Search.</li>
-                <p><strong>Skapa sökruta</strong></p>
-                <li class="">Sedan har vi gjort en lista över trender just nu. Vi har gjort övre och undre kanten av listan rundad och tagit bort borders. VI alde in de tre prickarna son knappar och styleade dem med bootstrap.</li>
-                <p><strong>svagheter med bootstrap</strong></p>
-                <li>
-                    <ol>
-                        <li>Finns inte så många färger</li>
-                        <li>Svårare att memorera kommandon när de ofta består av en bokstav.</li>
-                    </ol>
-
-                Jag valde att arbeta med Aside-elementet. Jag började med att skapa en sökruta som ligger uppe till höger. Det tog ett tag att lyckas få den som den är och Jag lyckades inte riktigt få den lika bred som nedan element som jag hade tänkt. Jag lyckades inte få in förstoringsglaset på rätt plats heller utan den ligger ovanför sökrutan.
-                Sedan skapade jag två lstor med trender just nu och förslag på personer man kan följa. Jag skapade dessa som listor för att kunna få punkterna att ligga till höger.
-
-                </li>
-                    </ul>
+          <p class="" id="btn-post">
+            *Finns inte så många färger <br>
+            *Svårare att memorera kommandon när de ofta består av en bokstav. <br>
+            
+            Jag valde att arbeta med Aside-elementet. Jag började med att skapa en sökruta som ligger uppe till höger. Det tog ett tag att lyckas få den som den är och Jag lyckades inte riktigt få den lika bred som nedan element som jag hade tänkt. Jag lyckades inte få in förstoringsglaset på rätt plats heller utan den ligger ovanför sökrutan.
+            Sedan skapade jag två lstor med trender just nu och förslag på personer man kan följa. Jag skapade dessa som listor för att kunna få punkterna att ligga till höger.
+          </p>
 
             <img src="https://picsum.photos/300/200" alt="rando pico" />
         </div>
@@ -692,7 +662,7 @@
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
                   <img
-                    src="jonte/img/shrek.jpg"
+                    src="img/shrek.jpg"
                     class="rounded-circle"
                     width="20%"
                     alt="Gustav"
@@ -711,7 +681,7 @@
             >
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
-                  <img src="Jonte/img/batman.jpg"rounded-circle" width="20%"
+                  <img src="img/bean.jpg"rounded-circle" width="20%"
                   alt="Jonathan"> Jonathan
                 </div>
                 @jonathan
@@ -727,7 +697,7 @@
               <div class="ms-2 me-auto">
                 <div class="fw-bold">
                   <img
-                    src="Jonte/img/bean.jpg"
+                    src="img/batman.jpg"
                     class="rounded-circle"
                     width="20%"
                     alt="Tom"
